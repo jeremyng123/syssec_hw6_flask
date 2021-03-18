@@ -7,6 +7,7 @@ Jeremy, Wan Ching, Joel, Joshua, Heng yu
 ## Engine
 
 Flask
+MongoDB
 
 ## Terminologies
 
@@ -48,7 +49,13 @@ Flask
 
    If there are problems running the server, try `sudo pip` instead, without the `--user` flag.
 
-6. Start the backend server with `python main.py`.
+6. Make sure you already have docker installed. We will use docker to host mongodb in the localhost. Execute these commands:  
+   ```bash
+   $ docker pull mongo
+   $ docker run --name mongo-db -p 27017:27017 -d mongo:latest
+   ```
+
+7. Start the backend server with `python main.py`.
 
 ## About
 
